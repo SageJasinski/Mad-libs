@@ -40,34 +40,12 @@ function origin (){
         //if we came from dog
         let dogwords = localStorage.getItem('Dogword');
         let values = JSON.parse(dogwords);
-
-        pOne.textContent = 'You won\'t believe what my pet ';
-        pTwo.textContent = values.inOne;
-        pThree.textContent = values.inTwo;
-        pFour.textContent = ' did last';
-        pFive.textContent = values.inThree;
-        pSix.textContent = '! After a long day of';
-        pSeven.textContent = values.inFour;
-        pEight.textContent = 'at';
-        pNine.textContent = values.inFive;
-        pTen.textContent = ', I came home to find what he/she had';
-        pEleven.textContent = values.inSix;
-        pTwelve.textContent = 'all over the new';
-        pThirteen.textContent = values.inSeven;
-        pFourteen.textContent = '. I had just bought it last';
-        pFifteen.textContent = values.inEight;
-        pSixteen.textContent = ', and it\'s already';
-        pSeventeen.textContent = values.inNine;
-        pEighteen.textContent = '. I have no idea what I\'m going to do about this. I do know, however, that I need to punish my pet! I was considering';
-        pNineteen.textContent = values.inTen;
-        pTwenty.textContent = 'him/her, but I felt that was a bit';
-        pTwentyOne.textContent = values.inEleven;
-        pTwentyTwo.textContent = '. Maybe I should let it slide and try to calm down by eating my comfort food';
-        pTwentyThree.textContent = values.inTwelve;
-        pTwentyFour.textContent = values.inThirteen;
         //change <p> to the dog story and dog variables
-
+        
+        pOne.textContent = `You won\'t believe what my pet ${values.inOne} ${values.inTwo} did last ${values.inThree} ! After a long day of ${values.inFour} at ${values.inFive} , I came home to find out what he/she had ${values.inSix} all over the new ${values.inSeven}. I just bought it last ${values.inEight}, and it\'s already ${values.inNine}. I have no idea what I\'m going to do about this. I do know, however, that I need to punish my pet! I was considering ${values.inTen} him/her, but I felt that was a bit ${values.inEleven}. Maybe I should let it slide and try to calm down by eating my comfort food ${values.inTwelve} ${values.inThirteen}.`
+        
         console.log('dog is true');
+
         dog = false;
         let stringDog = JSON.stringify(dog);
         localStorage.setItem('Dog', stringDog);
@@ -75,32 +53,17 @@ function origin (){
     }else if (cat === true){
         //if we came from cat
 
-
         let catwords = localStorage.getItem('Catword');
         let value = JSON.parse(catwords);
 
         pOne.textContent = `My cat,${value.catOne} is the best kitten ever! Her Mom was a tabby cat and her dad was a ${value.catTwo} so she looks more like a(n) ${value.catThree} ${value.catFour} Her favorite food is ${value.catFive} , but only if you dye it ${value.catSix} . One of our favorite games is to ${value.catSeven} in my bed room (except she always wins). Yesterday I felt ${value.Eight} because I thought she had run away... but it turns out she went to ${value.catNine} all day because we were out of ${cat.valueTen} . What a thoughtful kitten!` ;
+        
+        let catwords = localStorage.getItem('Catword');
+        let value = JSON.parse(catwords);
 
-        // pOne.textContent = 'My cat, ';
-        // pTwo.textContent = value.catOne;
-        // pThree.textContent = 'is the best kitten ever! Her Mom was a tabby cat and her dad was a ';
-        // pFour.textContent = value.catTwo;
-        // pFive.textContent = 'so she looks more like a(n) ';
-        // pSix.textContent = value.catThree;
-        // pSeven.textContent = value.catFour;
-        // pEight.textContent = 'Her favorite food is ';
-        // pNine.textContent = value.catFive;
-        // pTen.textContent = ', but only if you dye it ';
-        // pEleven.textContent = value.catSix;
-        // pTwelve.textContent = '. One of our favorite games is to ';
-        // pThirteen.textContent = value.catSeven;
-        // pFourteen.textContent = 'in my bed room (except she always wins). Yesterday I felt ';
-        // pFifteen.textContent = value.catEight;
-        // pSixteen.textContent = 'because I thought she had run away... but it turns out she went to ';
-        // pSeventeen.textContent = value.catNine;
-        // pEighteen.textContent = 'all day because we were out of ';
-        // pNineteen.textContent = value.catTen;
-        // pTwenty.textContent = '. What a thoughtful kitten!';
+        
+
+        
 
         //change <p> to cat story and cat variables
 
@@ -115,7 +78,7 @@ function origin (){
         let halloweenWords = localStorage.getItem('HalloweenWords');
         let values = JSON.parse(halloweenWords);
 
-        pOne.textContent ='I can\'t believe it\'s already';
+        pOne.textContent ='I can\'t believe it\s already';
         pTwo.textContent = values.inOne;
         pThree.textContent = '! I can\'t wait to put on my';
         pFour.textContent = values.inTwo;

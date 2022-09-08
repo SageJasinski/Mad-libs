@@ -17,19 +17,19 @@ let wordTen = document.getElementById('input10');
 let bank = new Object();
 
 function submitInputs() { //The user has hit Submit. Collects data from the form.
-    userInputs.input1 = document.getElementById('input1').value;
-    userInputs.input2 = document.getElementById('input2').value;
-    userInputs.input3 = document.getElementById('input3').value;
-    userInputs.input4 = document.getElementById('input4').value; 
-    userInputs.input5 = document.getElementById('input5').value;
-    userInputs.input6 = document.getElementById('input6').value;
-    userInputs.input7 = document.getElementById('input7').value;
-    userInputs.input8 = document.getElementById('input8').value;
-    userInputs.input9= document.getElementById('input9').value;
-    userInputs.input9= document.getElementById('input10').value;
-    // createMadLibs(); //Calls the function to write the story.
+
+  userInputs.input1 = document.getElementById('input1').value;
+  userInputs.input2 = document.getElementById('input2').value;
+  userInputs.input3 = document.getElementById('input3').value;
+  userInputs.input4 = document.getElementById('input4').value; 
+  userInputs.input5 = document.getElementById('input5').value;
+  userInputs.input6 = document.getElementById('input6').value;
+  userInputs.input7 = document.getElementById('input7').value;
+  userInputs.input8 = document.getElementById('input8').value;
+  userInputs.input9= document.getElementById('input9').value;
+  userInputs.input9= document.getElementById('input10').value;
 }
-submitInputs(); //Collects any data from the form.
+  submitInputs(); 
 tag.addEventListener('click', function(){
     catOrigin = true;
 

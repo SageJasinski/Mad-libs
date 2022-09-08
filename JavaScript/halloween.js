@@ -17,6 +17,7 @@ let wordNine = document.getElementById('input9');
 //makes new obj for storing values
 let bank = new Object();
 
+
 subBtn.addEventListener('click', function(){
     halloweenOrigin = true;
 
@@ -38,3 +39,13 @@ subBtn.addEventListener('click', function(){
 
     window.location.href = 'results.html';
 });
+
+//Charles added local storage for halloween
+// tag.addEventListener('click', function(){
+//   //window.open(editor.html);
+//   localStorage.setItem('test', 'All my words');
+//   localStorage.getItem('test');
+//   //window.open(results.html);
+
+//   window.location.href = 'results.html';
+// })

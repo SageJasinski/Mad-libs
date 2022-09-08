@@ -318,6 +318,7 @@ font-family: "Comic Sans", cursive;
     font-family: "Comic Sans", cursive;
 }
 
+
 form {
     margin-top: 10px;
 }
@@ -325,18 +326,16 @@ form {
 .hallo {
     display: inline;
     line-height: 100px
+
 }
 
+
 #res {
-    display: flex;
+    display: inline-block;
 }
 
 #fake {
     background-color: #357688;
-}
-
-.results {
-    display: flex;
 }
 
 img:hover {
@@ -349,4 +348,3 @@ img:hover {
   .info {
     text-align: center;
   }
-

@@ -323,7 +323,8 @@ font-family: "Comic Sans", cursive;
 /* */
 .instructions {
     border: thin solid black;
-    width: 420px;
+    /* width: 420px; */
+    max-width: 800px;
     margin-bottom: 10px;
 }
 
